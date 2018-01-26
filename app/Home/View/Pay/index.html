@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>支付</title>
+		<link rel="stylesheet" type="text/css" href="CSS/common.css"/>
+		<link rel="stylesheet" type="text/css" href="CSS/mall.css"/>
+		<script src="JS_/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="JS_/jquery-3.1.1.js" type="text/javascript"></script>
+		<script src="JS_/common.js" type="text/javascript"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	</head>
+	<body style="background: rgb(242,242,242);">
+		<div class="Upay">
+			<p class="Upay-text">支付金额</p>
+			<input type="text" name="blance" id="blance" placeholder="充值金额"/>
+		</div>
+		<div class="Upay2">
+			<p class="Upay-text">支付方式</p>
+			<div class="Upay-con">
+				<span><img src="IMG/zf-wx.png"/></span>
+				<div>
+					<p>微信支付</p>
+					<p>推荐安装微信5.0及以上版本</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="bottom-inp">
+		<input type="button" name="" id="zhifu" value="支付"/>
+		</div>
+		<script>
+		$(function(){
+			
+			$("#zhifu").click(function(){
+				var yue=$('#blance').val();
+				if(yue<=0){
+				alert('余额不能为空!');
+				}else{
+					location.href="__CONTROLLER__/fukuan/je/"+yue+"";
+					}
+			})
+		})
+		
+		</script>
+	</body>
+</html>

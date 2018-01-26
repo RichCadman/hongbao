@@ -1,0 +1,237 @@
+[ 2017-11-15T09:43:27+08:00 ] 112.230.100.146 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-11-15T09:43:28+08:00 ] 112.230.100.146 /hongbao/?_t_t_t=0.3676180752305558
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-11-15T09:43:29+08:00 ] 112.230.100.146 /hongbao/index.php/Login/login_do?code=061XMgzF0hdBJj2Y1dxF007czF0XMgzA&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `hb_users` SET `wx_name`='白色的希望',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/GWkslDricRiaicsEWyrJP0Q7MLiaf3Snxu6IQkib3yA8swRkCCmrIhCuI64bV2vdx9ibuAW6BEoibAHibdyS0BdoGBUTicQ/0' WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-11-15T09:43:29+08:00 ] 112.230.100.146 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-11-15T09:43:38+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_rp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-11-15T09:43:38+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_rpjl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_detail` WHERE ( userid=7 ) ORDER BY time desc  [ RunTime:0.0014s ]
+
+[ 2017-11-15T09:43:41+08:00 ] 112.230.100.146 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=7 and time between 1510675200 and 1510761600 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time` FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-11-15T09:43:44+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_khjl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_submit` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_submit` WHERE ( gl_id=7 )  [ RunTime:0.0016s ]
+
+[ 2017-11-15T09:43:44+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_fl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-11-15T09:43:57+08:00 ] 112.230.100.146 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0021s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=7 and time between 1510675200 and 1510761600 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0021s ]
+SQL: SELECT `share_time` FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2017-11-15T09:44:03+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_fl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2017-11-15T09:44:05+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_fl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-11-15T09:44:05+08:00 ] 112.230.100.146 /hongbao/index.php/Index/my_khjl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_submit` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_submit` WHERE ( gl_id=7 )  [ RunTime:0.0015s ]
+
+[ 2017-11-15T13:55:21+08:00 ] 119.162.10.242 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-11-15T13:55:22+08:00 ] 119.162.10.242 /hongbao/index.php/Login/login_do?code=021Kz4NS0bRiGW1q1cPS0ofLMS0Kz4Nv&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: UPDATE `hb_users` SET `wx_name`='白色的希望',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/GWkslDricRiaicsEWyrJP0Q7MLiaf3Snxu6IQkib3yA8swRkCCmrIhCuI64bV2vdx9ibuAW6BEoibAHibdyS0BdoGBUTicQ/0' WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) [ RunTime:0.0013s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-11-15T13:55:23+08:00 ] 119.162.10.242 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-11-15T13:56:12+08:00 ] 119.162.10.242 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=7 and time between 1510675200 and 1510761600 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time` FROM `hb_users` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0013s ]
+

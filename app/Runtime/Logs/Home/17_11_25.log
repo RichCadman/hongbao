@@ -1,0 +1,1703 @@
+[ 2017-11-25T08:34:51+08:00 ] 113.128.232.233 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-11-25T08:34:52+08:00 ] 113.128.232.233 /hongbao/index.php/Login/login_do?code=061wPmE30D9hgD1UzIC30mQoE30wPmEu&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `hb_users` SET `wx_name`='白色的希望',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/GWkslDricRiaicsEWyrJP0Q7MLiaf3Snxu6IQkib3yA8swRkCCmrIhCuI64bV2vdx9ibuAW6BEoibAHibdyS0BdoGBUTicQ/0' WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20beLtOBUhZsU23LdYrPFetI' ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-11-25T08:34:52+08:00 ] 113.128.232.233 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-11-25T08:34:59+08:00 ] 113.128.232.233 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=11 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-11-25T08:35:12+08:00 ] 113.128.232.233 /hongbao/index.php/Share/share_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: UPDATE `hb_users` SET `share_time`='1511570112' WHERE ( id=11 ) [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-11-25T08:35:14+08:00 ] 183.61.51.68 /hongbao/index.php/Share/share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-11-25T08:35:16+08:00 ] 113.128.232.233 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=11 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: UPDATE `hb_users` SET `money`=money+1.2 WHERE ( id=11 ) [ RunTime:0.0015s ]
+SQL: UPDATE `hb_users` SET `share_num`=share_num+1 WHERE ( id=11 ) [ RunTime:0.0014s ]
+SQL: INSERT INTO `hb_detail` (`userid`,`jine`,`time`,`types`,`username`) VALUES ('11','1.2','1511570116','分享红包','白色的希望') [ RunTime:0.0014s ]
+
+[ 2017-11-25T08:35:17+08:00 ] 113.128.232.233 /hongbao/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-11-25T08:35:19+08:00 ] 113.128.232.233 /hongbao/index.php/Index/my_rp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-11-25T08:35:19+08:00 ] 113.128.232.233 /hongbao/index.php/Index/my_rpjl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_detail` WHERE ( userid=11 ) ORDER BY time desc  [ RunTime:0.0018s ]
+
+[ 2017-11-25T08:35:23+08:00 ] 120.204.17.70 /hongbao/index.php/Share/share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-11-25T08:35:27+08:00 ] 120.204.17.68 /hongbao/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: userinfo /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_users` WHERE ( id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_users` WHERE ( id= ) LIMIT 1  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/BaseController.class.php:7) /data/home/bxu2347690191/htdocs/hongbao/lib/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/BaseController.class.php:7) /data/home/bxu2347690191/htdocs/hongbao/lib/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2017-11-25T20:30:48+08:00 ] 123.151.76.248 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002505s ]
+
+[ 2017-11-25T20:30:49+08:00 ] 123.151.76.248 /hongbao/index.php/Login/login_do?code=021vdIp01vtQCZ1tO9p01Rg5q01vdIpj&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: UPDATE `hb_users` SET `wx_name`='红',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epTkhsHSHyJ6N3zKhesDVaC23RPhUbickBa4qW8qf0onPkQVbdkflzXviaSmjVzXKibm7via4ntefUAKg/0' WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-11-25T20:30:50+08:00 ] 123.151.76.248 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-11-25T20:30:50+08:00 ] 123.151.76.248 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-11-25T20:30:52+08:00 ] 125.39.46.46 /hongbao/index.php/Login/login_do?code=001OVvLj0TOXEn1iu5Mj0nJALj0OVvLI&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: UPDATE `hb_users` SET `wx_name`='红',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epTkhsHSHyJ6N3zKhesDVaC23RPhUbickBa4qW8qf0onPkQVbdkflzXviaSmjVzXKibm7via4ntefUAKg/0' WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-11-25T20:30:52+08:00 ] 123.151.76.248 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-11-25T20:30:55+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-11-25T20:30:58+08:00 ] 120.204.17.70 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-11-25T20:31:00+08:00 ] 120.204.17.68 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: userinfo /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_users` WHERE ( id= ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_users` WHERE ( id= ) LIMIT 1  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/BaseController.class.php:7) /data/home/bxu2347690191/htdocs/hongbao/lib/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/BaseController.class.php:7) /data/home/bxu2347690191/htdocs/hongbao/lib/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2017-11-25T20:31:01+08:00 ] 101.226.66.179 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-11-25T20:31:05+08:00 ] 123.151.76.248 /hongbao/index.php/Share/share_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: UPDATE `hb_users` SET `share_time`='1511613065' WHERE ( id=16 ) [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-11-25T20:31:08+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:08+08:00 ] 101.226.233.142 /hongbao/index.php/Share/share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-11-25T20:31:10+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:11+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0023s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:12+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:12+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:12+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:13+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:13+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:13+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:13+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:14+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:14+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:14+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:14+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:15+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:16+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:16+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0028s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:16+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0021s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:17+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:17+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:17+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:41+08:00 ] 123.151.76.248 /hongbao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-11-25T20:31:42+08:00 ] 125.39.46.46 /hongbao/index.php/Login/login_do?code=0815tMGE1hEBs003nKGE1LfPGE15tMGV&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `hb_users` SET `wx_name`='红',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epTkhsHSHyJ6N3zKhesDVaC23RPhUbickBa4qW8qf0onPkQVbdkflzXviaSmjVzXKibm7via4ntefUAKg/0' WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-11-25T20:31:43+08:00 ] 123.151.76.248 /hongbao/index.php/Login/login_do?code=021eHKW62Y5BTK0zdaX62qGEW62eHKWR&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `hb_users` SET `wx_name`='红',`wx_photo`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epTkhsHSHyJ6N3zKhesDVaC23RPhUbickBa4qW8qf0onPkQVbdkflzXviaSmjVzXKibm7via4ntefUAKg/0' WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) [ RunTime:0.0014s ]
+SQL: SELECT * FROM `hb_users` WHERE ( openid='oDpc20XYr5QP35yYciNQ-VmsbMzs' ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2017-11-25T20:31:43+08:00 ] 123.151.76.248 /hongbao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-11-25T20:31:46+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:48+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:48+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:49+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:50+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:50+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:51+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:51+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:52+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:52+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:53+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:53+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:53+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:54+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:54+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:54+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0014s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0014s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:54+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:55+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:55+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0014s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:56+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:56+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0027s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:56+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:57+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:57+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:31:59+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:00+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:00+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:01+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0021s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:01+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:01+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0024s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0017s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:02+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0103s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:02+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0019s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:03+08:00 ] 125.39.46.46 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0016s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:32:04+08:00 ] 123.151.76.248 /hongbao/index.php/Index/grab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_detail` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `hb_detail` WHERE ( userid=16 and time between 1511539200 and 1511625600 and types='分享红包' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0015s ]
+SQL: SELECT `share_time`,`share_num` FROM `hb_users` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shrare_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: hb_num /data/home/bxu2347690191/htdocs/hongbao/app/Home/Controller/IndexController.class.php 第 61 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=16 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_users` SET `money`=money+ WHERE ( id=16 )
+
+[ 2017-11-25T20:33:42+08:00 ] 123.151.76.248 /hongbao/index.php/Share/share?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-11-25T20:33:42+08:00 ] 125.39.46.46 /hongbao/index.php/Share/share?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-11-25T20:33:51+08:00 ] 120.204.17.70 /hongbao/index.php/Share/share?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-11-25T20:33:56+08:00 ] 125.39.46.46 /hongbao/index.php/Share/share_success
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0018s ]
+SQL: UPDATE `hb_users` SET `share_time`='1511613236' WHERE ( id=16 ) [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-11-25T20:34:08+08:00 ] 123.151.76.248 /hongbao/index.php/Share/share?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-11-25T21:10:56+08:00 ] 101.226.225.86 /hongbao/index.php/Share/share?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-11-25T21:11:05+08:00 ] 120.204.17.67 /hongbao/index.php/Share/share?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `hb_sharetitle` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hb_sharetitle` LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+

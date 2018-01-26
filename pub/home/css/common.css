@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: #14131a;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	/* overflow: auto; */
+	overflow: Scroll;
+}
+div{
+	
+   -webkit-overflow-scrolling:touch !important;   
+ 
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+	-webkit-appearance: none;
+
+}
+
+textarea {  -webkit-appearance: none;}   
+
+/*如果还有圆角的问题，*/
+a:active{
+
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+@font-face {
+	font-family: mfont;
+	src: url(../font/PingFang Medium.ttf);
+	
+}
+@font-face {
+	font-family: mfont2;
+	src: url(../font/PingFang Regular.ttf);
+	
+}
+
+.bottom-inp{
+	width: 92%;
+	position: fixed;
+	bottom: 1rem;
+	left: 4%;
+}
+.bottom-inp input{
+	width: 100%;
+	height: 2.4rem;
+	border: none;
+	background: #F4354B;
+	color: #FFF;
+	border-radius: 90px;
+	font-size: 1rem;
+}
+/*底部*/
+.mall-foot{
+	width: 100%;
+	height: 2.64rem;
+	border-top: 1px solid #808080;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	background: rgb(255,255,255);
+}
+.foot-con{
+	width:20%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.64rem;
+	float: left;
+}
+.foot-con img{
+	display: block;
+	margin: auto;
+	margin-top: 9%;
+	height: 1.2rem;
+}
+.foot-con a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: #323232;
+}
+.foot-color{
+	color: #F4354B;
+}
+/*gouwuche*/
+.car-bottom{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 2.6rem;
+	background: #FAFAFA;
+}
+.car-bottom input{
+	width: 22%;
+	height: 100%;
+	border: none;
+	float: right;
+	color: #fff;
+	background: #F4354B;
+	font-size: 0.85rem;
+}
+.car-bottom1{
+	width: 78%;
+	height: 100%;
+	float: left;
+}
+.car-bottom1 p:nth-of-type(1){
+	line-height: 2.6rem;
+	font-size: 0.75rem;
+	float:left ;
+	margin-left: 0.5rem;
+}
+.car-bottom1 p:nth-of-type(2){
+	line-height: 2.6rem;
+	font-size: 0.75rem;
+	float:left ;
+	margin-left: 18%;
+}
+.car-bottom1 p:nth-of-type(2) span:nth-child(2){
+	color: #F4354B;
+}
+
+/*轮播圆点*/
+.swiper-pagination span{
+	width: 0.3rem !important;
+	height: 0.3rem !important;
+	
+}
+.swiper-pagination-bullet{
+	background: red !important;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 50%;
+	margin:0 0.2rem !important;
+}
